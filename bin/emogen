@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require "slack/emogen"
+require "slack/emogen/cli"
+
+f_path = File.expand_path(File.dirname(__FILE__))
+$root_path = Pathname.new(f_path).parent.to_s
+
+Slack::Emogen::CLI.start(ARGV)

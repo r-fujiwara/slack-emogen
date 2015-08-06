@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "slack/emogen"
+
+require "pry"
+Pry.start

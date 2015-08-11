@@ -23,7 +23,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "pry-byebug"
-  spec.add_dependency "thor"
-  spec.add_dependency "selenium-webdriver"
-  spec.add_dependency "mini_magick"
+  spec.add_dependency "thor", ">= 0.1.91"
+  spec.add_dependency "headless", "2.2.0"
+  spec.add_dependency "selenium-webdriver", "~> 2.47.1"
+  spec.add_dependency "mini_magick", "4.2.9"
 end

@@ -1,5 +1,6 @@
 require "uri"
 require "selenium-webdriver"
+require "headless"
 
 module Slack::Emogen
   class Register
@@ -14,6 +15,8 @@ module Slack::Emogen
     def post!
       login
       input_values
+    rescue => e
+      @driver.quit
     end
 
     def login
@@ -42,7 +45,7 @@ module Slack::Emogen
     end
 
     def emoji_custome_url
-      URI.join @config.url, "customize/emoji"
+      URI.join(@config.url, "customize/emoji").to_s
     end
 
 

@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+コマンドラインからslackの絵文字を生成します
+
+## How to Use
+
+- インストール後に
+
+```
+$ emogen -i sample.png -k sample
+```
+
+- 初回にslackのorganizationとユーザ名、パスワード名を聞かれるので、入力してください。
 
 ## Development
 

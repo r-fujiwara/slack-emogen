@@ -38,7 +38,7 @@ module Slack::Emogen
       submit_btn = @driver.find_element(:css, ".btn.btn_primary")
       submit_btn.click
 
-      @driver.exit
+      @driver.quit
     end
 
     def emoji_custome_url
